@@ -20,9 +20,12 @@ let package = Package(
                 .product(name: "SocketIO", package: "socket.io-client-swift")
             ],
             path: "VWO/",
-            publicHeadersPath: "VWO/VWO.h",
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("VWO/")
+                .headerSearchPath(""),
+                .headerSearchPath("Extensions/"),
+                .headerSearchPath("Helpers/"),
+                .headerSearchPath("Models/")
             ]
         )
     ]
