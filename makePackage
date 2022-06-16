@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mv Socket/VWOSocket.h VWO
+mv Socket/VWOSocket.m VWO
+
+mkdir -p VWO/Public
+mv VWO/VWO.h VWO/Public
+mv VWO/VWOConfig.h VWO/Public
